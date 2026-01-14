@@ -3,12 +3,11 @@ FROM node:14
 # Set the working directory
 WORKDIR /usr/src/app
 
-# Copy package.json and yarn.lock
+# Copy package.json
 COPY package.json ./
-COPY yarn.lock ./
 
 # Install dependencies
-RUN yarn install
+RUN npm install
 
 # Copy the rest of the application code
 COPY . .
@@ -17,4 +16,4 @@ COPY . .
 EXPOSE 8001
 
 # Command to run the application
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
