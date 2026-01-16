@@ -15,7 +15,7 @@ express-server
 └── README.md              # Project documentation
 ```
 
-## Getting Started
+
 
 ### Prerequisites
 
