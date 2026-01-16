@@ -3,7 +3,7 @@ FROM node:14
 WORKDIR /app
 
 COPY package*.json /app
-RUN yarn install
+RUN npm install
 EXPOSE 8001
 
-CMD [ "yarn", "start" ]
+CMD [ "npm", "start" ]
